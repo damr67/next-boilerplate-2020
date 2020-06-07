@@ -1,0 +1,91 @@
+{
+  "name": "next-boilerplate-2020",
+  "version": "1.0.0",
+  "description": "Nextjs, Styled Components, Apollo 2020 Awesome Boilerplate!",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/damr67/next-boilerplate-2020.git"
+  },
+  "dependencies": {
+    "@apollo/react-hooks": "^3.1.5",
+    "apollo-boost": "^0.4.9",
+    "babel-plugin-styled-components": "^1.10.7",
+    "graphql": "^15.0.0",
+    "next": "^9.4.4",
+    "next-with-apollo": "^5.0.1",
+    "nprogress": "^0.2.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "styled-components": "^5.1.1"
+  },
+  "keywords": [
+    "Next",
+    "React",
+    "Apollo",
+    "Graphl"
+  ],
+  "author": "Daniel Moya 2020 @damr67",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/damr67/next-boilerplate-2020/issues"
+  },
+  "homepage": "https://github.com/damr67/next-boilerplate-2020#readme",
+  "//": "Babel.rc config",
+  "babel": {
+    "env": {
+      "development": {
+        "presets": [
+          "next/babel"
+        ],
+        "plugins": [
+          [
+            "styled-components",
+            {
+              "ssr": true,
+              "displayName": true
+            }
+          ]
+        ]
+      },
+      "production": {
+        "presets": [
+          "next/babel"
+        ],
+        "plugins": [
+          [
+            "styled-components",
+            {
+              "ssr": true,
+              "displayName": true
+            }
+          ]
+        ]
+      },
+      "test": {
+        "presets": [
+          [
+            "next/babel",
+            {
+              "preset-env": {
+                "modules": "commonjs"
+              }
+            }
+          ]
+        ],
+        "plugins": [
+          [
+            "styled-components",
+            {
+              "ssr": true,
+              "displayName": true
+            }
+          ]
+        ]
+      }
+    }
+  }
+}
