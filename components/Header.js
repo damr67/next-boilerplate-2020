@@ -12,8 +12,8 @@ const Header = () => {
       <Link href="/">
         <a>Home</a>
       </Link>
-      <Link href="/fetch">
-        <a>Fetch Data</a>
+      <Link href="/characters">
+        <a>Characters</a>
       </Link>
     </div>
   );
